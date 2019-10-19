@@ -1,14 +1,17 @@
-const str = "karine agredo"
+const str = "Hey, I'm karine";
+
 function reverseString(str) {
+
+    if (!str || typeof (str) != 'string' || str.length < 2) {
+        return 'invalid input';
+    }
     const arrayString = str.split("");
+    const arrayLength = arrayString.length - 1;
 
     let reversedArray = [];
-    for (let i = 0; i < arrayString.length; i++) {
-        const last = arrayString[i];
-        reversedArray.unshift(last)
+    for (let i = arrayLength; i >= 0; i--) {
+        reversedArray.push(str[i])
     }
-    console.log(reversedArray.join(" "))
-    return reversedArray;
-
+    return reversedArray.join(" ");
 }
-reverseString(str)
+console.log(reverseString(str))
