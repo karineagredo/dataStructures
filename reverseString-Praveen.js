@@ -13,4 +13,4 @@ function reverse(string) {
 function reverseString(str) {
     return str.split("").reverse().join("");
 }
-reverseString("hello");
+console.log(reverseString("hello karine 123"));
