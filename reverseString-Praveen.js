@@ -33,7 +33,7 @@ const arrayFromRange = function arrayFromRange (min, max) {
 
 function except(array, excluded) {
   const output = [];
-  for (let number of array)
+  for (let number of array) 
    if(!excluded.includes(number))
    output.push(number);
    console.log(output);
