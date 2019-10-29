@@ -32,6 +32,7 @@ console.log(arrayFromRange(1, 100));
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function except(array, excluded) {
+
     const output = [];
     for (let number of array)
         if (!excluded.includes(number))
